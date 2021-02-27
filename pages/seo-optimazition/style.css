@@ -1,0 +1,16 @@
+  ul.stepper{
+      margin: 0 !important;
+      padding: 0 !important;
+  }
+  ul.stepper li a{
+      padding-bottom: 0.5rem;
+  }
+  .list li{
+      text-align: left !important;
+      margin-left: 1.2rem;
+      display: block;
+  }
+  .fa-check-square-o{
+      margin: 0 0.5rem;
+      color: #64dd17;
+  }
