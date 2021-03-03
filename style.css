@@ -108,6 +108,17 @@ body{
 .navbar-toggler{
   margin-left: 88% !important;
 }
+
+.dropdown-menu{
+  background-color: rgba(233, 156, 243, 0.747);
+  border-radius: 5px !important;
+}
+.dropdown-item:hover{
+  background-color: #86377b !important;
+}
+.dropdown-toggle{
+  font-size: 1.3rem !important;
+}
 @keyframes anim2{
   from{
       top: -100%;
@@ -224,13 +235,19 @@ body{
 }
 .txt{
   margin-right: 20px;
-  justify-items: center;
+  align-self: flex-start;
   width: 50%;
-  margin-top: 32px;
+  background-color: rgba(5, 5, 5, 0.733);
+  border-radius: 5px;
+  padding: 1rem 0;
+  line-height: 0;
 }
 .txt p{
   font-family: 'Play', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: rgb(209, 204, 204);
+ 
 }
 .myImage{
   border-radius: 200px;
@@ -268,6 +285,7 @@ body{
 #skills{
    width: 100%; 
    margin-top: 15px;
+   text-align: -webkit-center;
 } 
 #skills > h2{
   font-family: 'Play', sans-serif;
@@ -286,7 +304,7 @@ body{
 .skill-item p{
   font-weight: bold;
   font-family: 'Play', sans-serif;
-  color: rgb(10, 10, 10);
+  /* color: rgb(10, 10, 10); */
   font-size: 1.2rem;
 }
 .chart-container{
@@ -341,6 +359,13 @@ body{
   font-family: 'Play', sans-serif;
   font-size: 5%;
 }
+.skill-txt{
+  background: linear-gradient(to right, rgba(236, 141, 209, 0.5), rgba(254, 249, 215, 0.5));
+  padding: 0 1rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
 
 /* -------------------------------------services---------------------------- */
 
@@ -387,14 +412,12 @@ body{
 }
 
 /* ------------------------------------------------------------------------------- */
-.images-card {
+/* .images-card {
   padding: 7px;
   height: 25%;
   width: 25%;
-}
-/* #imageseo{
-  max-height: 80px;
 } */
+
 .card {
   position: relative;
   background-color: rgba(255, 255, 255, .15); 
@@ -405,20 +428,28 @@ body{
   background: inherit !important;
   border: 1px solid rgba(255, 255, 255, 0.459);
   transition: all 0.5s;
+  min-height: 70%;
 }
 .card:hover{
   box-shadow: 0 0 12px 12px rgba(175, 22, 155, 0.3);
   border: 1px solid rgba(173, 62, 159, 0.459);
 }
-
+.card-item{
+  min-height: 70vh;
+}
 .card h4,
 .card p
 {
   font-family:  'Play', sans-serif;
   color: #000;
+  font-weight: bold !important;
 }
 .card h4{
   min-height: 3.5rem;
+  
+}
+.card-img-top{
+  max-width: 120px !important;
 }
 .serviceBtn{
   width: 100px;
@@ -437,7 +468,7 @@ body{
 .card-body{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 @media screen and (max-width: 900px) {
@@ -585,7 +616,7 @@ textarea:active{
 .fa-instagram::before {
   background-image: linear-gradient(135deg, #c32aa3 30%, #0a3d62 50%);
 }
-.fa-linkedin::before {
+.fa-linkedin-in::before {
   background-image: linear-gradient(135deg, #0a06ff 30%, #0a3d62 50%);
 }
 
