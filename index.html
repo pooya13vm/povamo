@@ -7,10 +7,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- ------------font awesome------- -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
     <!-- ---------------animate----------------- -->
     <link rel="stylesheet" href="./css/animate.min.css" />
     <!-- -------------------google font-------------- -->
@@ -31,9 +31,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/mdb.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./images/pooya.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
     <title>WEB MASTER</title>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -73,10 +77,42 @@
                 <a class="nav-link text-dark" href="#homes">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="#aboutes">About</a>
+                <a class="nav-link text-dark" href="#aboutes">About me</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#services">Services</a>
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <a class="nav-link text-dark" href="#services">services</a>
+                  <a
+                    class="nav-link text-dark dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="tablist"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    href="#"
+                  ></a>
+                  <div class="dropdown-menu">
+                    <a
+                      class="dropdown-item"
+                      href="./pages/web-development/index.html"
+                      >Web Development</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./pages/e-commerce/index.html"
+                      >E - Commerce</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./pages/app-development/index.html"
+                      >App Development</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="./pages/seo-optimazition/index.html"
+                      >SEO Optimization</a
+                    >
+                  </div>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark" href="#contact-us">Contact</a>
@@ -93,7 +129,7 @@
               href=""
               class="typewrite"
               data-period="2000"
-              data-type='["My name is POOYA .", "I am a Web Developer.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'
+              data-type='["My name is POOYA .", "I am a web developer.", "I am creative.", "I love design.", "I love to develop." ]'
             >
               <span class="wrap"></span>
             </p>
@@ -113,7 +149,7 @@
         <div class="title col-12 my-4"><h3>About me</h3></div>
         <div class="discription">
           <div class="h-25 txt">
-            <p class="mt-0 mt-lg-5 mx-4">
+            <p class="mt-1 mx-4 mb-4">
               I am a person whose mind is full of new ideas and full of passion
               and I have a fighting spirit to solve problems and make my ideas
               come true. I always try to do my best for others and grow the
@@ -124,7 +160,7 @@
               enjoying it.
             </p>
           </div>
-          <div class="myImage">
+          <div class="myImage mt-2 mt-lg-0">
             <embed
               src="./images/pooya.svg"
               alt="pooya"
@@ -139,41 +175,64 @@
             <div class="col-md-3 col-6">
               <div class="skill-item">
                 <div class="chart-container">
-                  <div class="chart" data-percent="90" data-bar-color="red">
-                    <span class="percent" data-after="%">90</span>
+                  <div
+                    class="chart"
+                    data-percent="85"
+                    data-bar-color="rgb(150, 40, 126)"
+                  >
+                    <span class="percent" data-after="%">85</span>
                   </div>
                 </div>
-                <p>HTML5/CSS3</p>
+                <p class="skill-txt">
+                  <i class="fab fa-html5"></i
+                  ><i class="fab fa-css3-alt"></i> HTML5/CSS3
+                </p>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="skill-item">
                 <div class="chart-container">
-                  <div class="chart" data-percent="82" data-bar-color="green">
-                    <span class="percent" data-after="%">82</span>
+                  <div
+                    class="chart"
+                    data-percent="80"
+                    data-bar-color="rgb(150, 40, 126)"
+                  >
+                    <span class="percent" data-after="%">80</span>
                   </div>
                 </div>
-                <p>JavaScript</p>
+                <p class="skill-txt">
+                  <i class="fab fa-js-square"></i> JavaScript
+                </p>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="skill-item">
                 <div class="chart-container">
-                  <div class="chart" data-percent="68" data-bar-color="yellow">
-                    <span class="percent" data-after="%">68</span>
+                  <div
+                    class="chart"
+                    data-percent="75"
+                    data-bar-color="rgb(150, 40, 126)"
+                  >
+                    <span class="percent" data-after="%">75</span>
                   </div>
                 </div>
-                <p>React.js</p>
+                <p class="skill-txt"><i class="fab fa-react"></i> React.js</p>
               </div>
             </div>
             <div class="col-md-3 col-6">
               <div class="skill-item">
                 <div class="chart-container">
-                  <div class="chart" data-percent="58" data-bar-color="blue">
-                    <span class="percent" data-after="%">58</span>
+                  <div
+                    class="chart"
+                    data-percent="70"
+                    data-bar-color="rgb(150, 40, 126)"
+                  >
+                    <span class="percent" data-after="%">70</span>
                   </div>
                 </div>
-                <p>React native</p>
+                <p class="skill-txt">
+                  <i class="fas fa-mobile-alt"></i> React native
+                </p>
               </div>
             </div>
           </div>
@@ -265,7 +324,6 @@
                   src="./images/seo.svg"
                   alt="SEO"
                   class="w-50 card-img-top"
-                  id="imageseo"
                 />
                 <div class="text-center">
                   <h4 class="card-title">SEO Optimization</h4>
@@ -334,16 +392,15 @@
                   class="whatsapp-txt"
                   target="_blank"
                 >
-                  <i class="fa fa-whatsapp">Whatsapp</i></a
+                  <i class="fab fa-whatsapp mx-1"> Whatsapp</i></a
                 >
                 <a
                   href="https://t.me/pooya_vm"
                   class="telegram-txt"
                   target="_blank"
                 >
-                  <i class="fa fa-telegram"></i>
-                  Telegram</a
-                >
+                  <i class="fab fa-telegram mx-1"> Telegram</i>
+                </a>
               </div>
             </div>
             <hr />
@@ -353,22 +410,23 @@
                 class="s-icon"
                 href="https://github.com/pooya13vm"
                 target="_blank"
-                ><i class="x fa fa-github"></i
+              >
+                <i class="x fab fa-github"></i
               ></a>
               <a class="s-icon" href="https://twitter.com/" target="_blank"
-                ><i class="x fa fa-twitter"></i
+                ><i class="x fab fa-twitter"></i
               ></a>
               <a
                 class="s-icon"
                 href="https://www.instagram.com/"
                 target="_blank"
-                ><i class="x fa fa-instagram"></i
+                ><i class="x fab fa-instagram"></i
               ></a>
               <a
                 class="s-icon"
                 href="https://www.linkedin.com/in/pooya-vaghef-3b3a8278"
                 target="_blank"
-                ><i class="x fa fa-linkedin"></i
+                ><i class="x fab fa-linkedin-in"></i
               ></a>
             </div>
           </div>
