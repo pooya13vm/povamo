@@ -68,6 +68,13 @@ body{
  background: rgba(255, 255, 255, 0.2) !important;
  z-index: 3;
 }
+#particles-js {
+background-color: #ffffff;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -100;
+}
 /* -----------------------------------------home------------------------------1- */
 /* ------------------------navbar--------------------- */
 .home-background {
@@ -188,12 +195,10 @@ body{
   position: relative;
   height: auto;
   width: 100%;
-  /* overflow: hidden; */
   display: block;
   top: 0px;
   left: 0;
   padding-top: 4%;
-
 }
 @media screen and (max-width: 767px) {
   .main2{
@@ -217,10 +222,7 @@ body{
   height: 100%;
   background-position: center center;
 }
-.about-background{
-  background-image: url(./images/background.jpg);
-  background-position-x: 0;
-}
+
 .title h3{
   font-family: 'Play', sans-serif;
   color: #000;
@@ -235,12 +237,15 @@ body{
 }
 .txt{
   margin-right: 20px;
-  align-self: flex-start;
   width: 50%;
-  background-color: rgba(5, 5, 5, 0.733);
+  height: 30%;
+  background-color: rgba(5, 5, 5, 0.705);
   border-radius: 5px;
   padding: 1rem 0;
   line-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .txt p{
   font-family: 'Play', sans-serif;
@@ -248,6 +253,13 @@ body{
   font-weight: bold;
   color: rgb(209, 204, 204);
  
+}
+.resume-txt{
+  text-align: center;
+  color: #e0e0e0 !important;
+  background-color: #86377b;
+  padding: 5px;
+  border-radius: 8px;
 }
 .myImage{
   border-radius: 200px;
@@ -284,12 +296,19 @@ body{
 }
 #skills{
    width: 100%; 
-   margin-top: 15px;
+   margin-top: 5%;
    text-align: -webkit-center;
+   background-image: url(./images/background.jpg) ;
+   background-position-x: 0;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   border-top: 2px solid #86377b;
+   border-bottom: 2px solid #86377b;
 } 
 #skills > h2{
   font-family: 'Play', sans-serif;
   font-weight: 300;
+  margin-bottom: 2%;
 }
 .skill-item{
   position: relative;
@@ -304,7 +323,6 @@ body{
 .skill-item p{
   font-weight: bold;
   font-family: 'Play', sans-serif;
-  /* color: rgb(10, 10, 10); */
   font-size: 1.2rem;
 }
 .chart-container{
@@ -365,77 +383,65 @@ body{
   border-radius: 5px;
   font-size: 0.8rem;
 }
-
+@media screen and (max-width: 989px) {
+  .skill-txt{
+    font-size: 1rem;
+  }
+  }
+  @media screen and (max-width: 570px) {
+    .skill-item p{
+      font-size: 0.8rem;
+    }
+    .percent{
+      font-size: 1rem;
+    }
+    }
 
 /* -------------------------------------services---------------------------- */
-
+#services{
+  text-align: -webkit-center;
+}
 .main3 {
   position: relative;
-  height: 100vh;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
-  display: block;
-  top: 0;
-  left: 0;
+  display:flex;
+  flex-direction:column;
+  margin-top: 2%;
   padding: 3rem 2rem 0 2rem;
-  background-color:rgba(192, 189, 189, 0.425);
 }
 @media screen and (max-width: 820px) {
   .main3{
     height: auto;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
   }
   }
-.back-container3{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  clip: rect(0, auto, auto, 0);
-  z-index: -2;
-}
-.back-holder3{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-}
-.services-background{
-  background-image: url(./images/web-design.jpg);
-}
 .col-md-3{
   padding-right: 10px !important;
   padding-left: 10px !important;
 }
 
 /* ------------------------------------------------------------------------------- */
-/* .images-card {
-  padding: 7px;
-  height: 25%;
-  width: 25%;
-} */
-
 .card {
   position: relative;
-  background-color: rgba(255, 255, 255, .15); 
+  /* background-color: rgba(255, 255, 255, .15);  */
   backdrop-filter: blur(5px); 
-  height: 100% !important;
+  height: 70% !important;
   color:#000 !important;
   box-shadow: 0 0 12px 12px rgba(255, 255, 255, 0.3);
   background: inherit !important;
   border: 1px solid rgba(255, 255, 255, 0.459);
   transition: all 0.5s;
-  min-height: 70%;
+  min-height:max-content;
+  /* margin-top: 5%; */
+  border-radius: 25px 25px 0 0;
 }
 .card:hover{
   box-shadow: 0 0 12px 12px rgba(175, 22, 155, 0.3);
   border: 1px solid rgba(173, 62, 159, 0.459);
 }
 .card-item{
-  min-height: 70vh;
+  min-height: 60vh;
 }
 .card h4,
 .card p
@@ -449,20 +455,21 @@ body{
   
 }
 .card-img-top{
-  max-width: 120px !important;
+  max-width: 100% !important;
+  border-radius: 15px 15px 0 0;
 }
 .serviceBtn{
-  width: 100px;
+  width: 140px;
   height: 30px;
-  border: none;
   border-radius: 5px;
   font-family:  'Play', sans-serif;
-  background-color: rgba(255,255 ,255, 0.2);
+  background-color: rgb(169, 133, 173);
   float: right;
   transition: all .4s;
-}
+  border: 1px solid #000;
+  }
 .serviceBtn:hover{
-  background-color: rgba(133, 48, 145, 0.2);
+  background-color: rgb(126, 76, 133);
   color: #f7f7f7;
 }
 .card-body{
@@ -470,10 +477,22 @@ body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 0 !important;
+  height: 100vh;
+  padding-top: 15px;
+  border-radius: 25px 25px 0 0;
+  border:2px solid #c32aa3;
+  border-top:none;
+  background: linear-gradient(to top, #ffffff 80%, #03011a 20%);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 989px) {
   .card h4{
     font-size: 1.2rem;
+  }
+  .card-item{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    height: 50vh;
   }
   }
   @media screen and (max-width: 767px) {
@@ -482,7 +501,7 @@ body{
      margin: 0 auto;
    }
    .card-item{
-     margin: 2rem auto;
+     height: 90vh;
    }
     }
 
@@ -648,7 +667,7 @@ textarea:active{
   overflow: hidden;
   height: 100%;
   bottom: -1px;
-  background-image: linear-gradient(to top, #86377b 20%, #f7f7f7 80%);
+  background-image: linear-gradient(to top, #86377b 15%, #ffffff 85%);
 }
 .bgTop {
   z-index: 15;
@@ -725,13 +744,11 @@ animation: move-wave 3s;
 }
 .phone-txt{
  
-  border-bottom: 2px solid;
+  border-bottom: 1px solid #909090;
   font-size: 1.2rem;
+  margin-bottom: 25%;
+  padding-bottom: 5%;
 }
-}
-.phone-txt{
-  text-align: left;
-  
 }
 @media screen and (max-width: 767px){
   .card{
