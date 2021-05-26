@@ -155,7 +155,7 @@ $(window)
     var documentHeight = $(document).height() - $(window).height();
     var percent = (offsetTop / documentHeight) * 100 + "%";
     $(".progress").css({ width: percent });
-    $(".back-holder2").css({ backgroundPositionX: offsetTop + "px" });
+    $("#skills").css({ backgroundPositionX: offsetTop + "px" });
     if (offsetTop > 600) {
       $(".navbar").css({ background: "rgba(255,255,255,0.5)" });
     } else {
